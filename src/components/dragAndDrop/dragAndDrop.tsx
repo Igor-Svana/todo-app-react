@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "./dragAndDrop.style.css";
 import {
   DragDropContext,
@@ -13,7 +13,6 @@ import { Item } from "../../App";
 export interface IThemeProperties {
   textColor: string;
   lightBgColor: string;
-  bgColor: string;
   borderColor: string;
   items: Item[];
   filteredItems: Item[];
@@ -26,7 +25,6 @@ export interface IThemeProperties {
 const DragAndDrop = ({
   textColor,
   lightBgColor,
-  bgColor,
   borderColor,
   filteredItems,
   items,

@@ -120,7 +120,6 @@ function App() {
               <DragAndDrop
                 textColor={colorTheme.textColor}
                 lightBgColor={colorTheme.listBgColor}
-                bgColor={colorTheme.very_light_lines}
                 borderColor={colorTheme.borderColor}
                 filteredItems={filteredItems ? filteredItems : items}
                 items={items}
