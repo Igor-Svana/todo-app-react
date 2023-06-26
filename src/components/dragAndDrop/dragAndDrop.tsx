@@ -32,10 +32,10 @@ const DragAndDrop = ({
   deleteItemHandler
 }: IThemeProperties) => {
   
-
+  console.log(items)
   const handleDragEnd = (result: DropResult) => {
     if (!result.destination) return;
-    const itemsCopy = [...filteredItems];
+    const itemsCopy = [...items];
     const [reorderedItem] = itemsCopy.splice(result.source.index, 1);
     itemsCopy.splice(result.destination.index, 0, reorderedItem);
     setItems(itemsCopy);
