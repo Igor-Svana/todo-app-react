@@ -1,6 +1,8 @@
 import sunIcon from "./assets/icon-sun.svg";
 import moonIcon from "./assets/icon-moon.svg";
 import { useState, useRef, useMemo } from "react";
+import desktopImgDark from './images/bg-desktop-dark.jpg';
+import desktopImgLight from './images/bg-desktop-light.jpg';
 import { theme } from "./themeSchema";
 import DragAndDrop from "./components/dragAndDrop/dragAndDrop";
 import "./App.css";
@@ -68,8 +70,8 @@ function App() {
           className="bg-image"
           src={
             colorTheme === theme.dark
-              ? "../images/bg-desktop-dark.jpg"
-              : "../images/bg-desktop-light.jpg"
+              ? desktopImgDark
+              : desktopImgLight
           }
           alt="bg-image"
         />
